@@ -1,0 +1,263 @@
+/* Color Palette
+Background: #084857
+Text: #111
+Light Relative: 
+Base Color: 
+Dark Relative: 
+*/
+
+/* ------------------------------------- */
+/* Basic Setup */
+/* ------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: #084857;
+    font-family: 'Roboto', sans-serif;
+
+    background: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+p {
+    font-size: 18px;
+    color: white;
+}
+
+header {
+    padding-top: 200px;
+}
+
+header h1 {
+    text-shadow: 1px 1px 25px rgba(0, 0, 0, 0.54);
+    font-size: 54px;
+    color: #E3E3E3;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    overflow:hidden;
+    background-color: rgba(0, 0, 0, 0.40);
+}
+
+footer p {
+    margin-top: 17px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+footer p a {
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 12px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer p a:hover {
+    transition: color 0.3s ease;
+    color: rgb(255, 255, 255);
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+.main-nav {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.40);
+    border-bottom: 1px solid rgba(0,0,0, 0.15);
+    height: 50px;
+    margin-bottom: 50px;
+}
+
+.main-nav a {
+    font-weight: bold;  
+    color: rgb(255, 255, 255);
+    padding: 13px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+
+.icon-group {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.icon {
+    padding: 5px;
+}
+
+.icon i {
+    color: rgba(255, 255, 255, 1);
+    font-size: 25px;
+    transition: color 0.2s ease;
+}
+
+.icon i:hover {
+    transition: color 0.3s ease;
+    color: rgb(255, 255, 255);
+}
+
+/* ------------------------------------- */
+/* LANDING PAGE */
+/* ------------------------------------- */
+
+.landing-page {
+    height: 100%;
+}
+
+.landing-page:after {
+    content: "";
+    display: block;
+}
+
+.landing-page p {
+    padding: 30px;
+    font-size: 14px;
+}
+
+.landing-page h2 {
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    padding-bottom: 10px;
+}
+
+.landing-page hr {
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* ------------------------------------- */
+/* Media Queries */
+/* ------------------------------------- */
+
+/*iPhone portrait*/
+@media only screen and (min-width: 320px) {
+}
+
+
+/*iPhone landscape*/
+@media only screen and (min-width: 480px) {
+
+}
+
+
+/*ipad potrait*/
+@media only screen and (min-width: 768px) {
+
+}
+
+/*ipad lanscape / small laptop*/
+@media only screen and (min-width: 1024px) {
+    html {
+        position: relative;
+        min-height: 100%;
+        background-color: #084857;
+        font-family: 'Roboto', sans-serif;
+    
+        background: url("https://static.pexels.com/photos/37724/pexels-photo-37724.jpeg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-color: #252525;
+    }
+    
+    .main-nav {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        height: 80px;
+        overflow: hidden;
+        box-shadow:0 0 10px #101010;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 15px 5px;
+        font-size: 14px;
+        text-decoration: none;
+        height: 100%;
+        -webkit-transition: color 0.3s;
+        transition: color 0.2s ease;
+    }
+
+    .main-nav a:hover {
+        color: #868686;
+        -webkit-transition: color 0.3s;
+        transition: color 0.3s ease;
+    }
+
+    .inline-nav-container {
+        padding-top: 0;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .inline-nav-container ul {
+        list-style: none;
+    }
+
+    .inline-nav-container ul li {
+        display: inline-block;
+    }
+
+    .inline-nav-container ul li a {
+        display: inline-block;
+    }
+
+    .left-nav {
+        display: inline-block;
+        width: 32%;
+        text-align: left;
+    }
+
+    .right-nav {
+        display: inline-block;
+        text-align: right;
+    }
+
+    .center-nav {
+        display: inline-block;
+        width: 32%;
+        text-align: center;
+    }
+
+    /* ------------------------------------- */
+    /* LANDING PAGE */
+    /* ------------------------------------- */
+
+    .landing-page p {
+        line-height: 1.4;
+    }
+
+}
