@@ -30,6 +30,12 @@ html {
     background-color: #252525;
 }
 
+/* HEADER FONT */
+@font-face {
+    font-family: 'HeaderFont'; /*a name to be used later*/
+    src: url('fonts/aileron.black.otf'); /*URL to font*/
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -41,9 +47,9 @@ header {
 }
 
 header h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "HeaderFont";
     text-shadow: 1px 1px 25px rgba(0, 0, 0, 0.54);
-    font-size: 34px;
+    font-size: 36px;
     color: #E3E3E3;
     text-align: center;
     padding-bottom: 50px;
@@ -53,7 +59,7 @@ footer {
     height: 100px;
     width: 100%;
     overflow:hidden;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgb(66, 66, 66);
 }
 
 footer p {
@@ -188,17 +194,20 @@ a:-webkit-any-link {
 
 .about-page {
     width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow:0 0 10px #101010;
 }
 
 .about-page p {
-    padding-top: 20px;
-    padding-left: 20px;
     font-size: 14px;
+    padding-bottom: 10px;
 }
 
 .about-container {
     width: 100%;
     height: 600px;
+    padding: 40px;
     background-color: rgba(13, 22, 32, 1);
 }
 
