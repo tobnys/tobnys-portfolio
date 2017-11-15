@@ -1,9 +1,9 @@
 /* Color Palette
-Background: #084857
-Text: #111
-Light Relative: 
-Base Color: 
-Dark Relative: 
+Background: -
+Text: -
+Light Relative: #24acb6
+Base Color: -
+Dark Relative: -
 */
 
 /* ------------------------------------- */
@@ -23,9 +23,12 @@ html {
     background-color: #084857;
     font-family: 'Roboto', sans-serif;
 
-    background: url();
+    background: url("https://static.pexels.com/photos/37724/pexels-photo-37724.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #252525;
 }
 
 p {
@@ -34,25 +37,22 @@ p {
 }
 
 header {
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
 header h1 {
     text-shadow: 1px 1px 25px rgba(0, 0, 0, 0.54);
-    font-size: 54px;
+    font-size: 34px;
     color: #E3E3E3;
     text-align: center;
-    margin-bottom: -10px;
+    padding-bottom: 50px;
 }
 
 footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
     height: 100px;
     width: 100%;
     overflow:hidden;
-    background-color: rgba(0, 0, 0, 0.40);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 footer p {
@@ -82,9 +82,10 @@ a:-webkit-any-link {
 }
 
 .main-nav {
+    display: none;
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.40);
+    background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 1px solid rgba(0,0,0, 0.15);
     height: 50px;
     margin-bottom: 50px;
@@ -130,7 +131,7 @@ a:-webkit-any-link {
 /* ------------------------------------- */
 
 .landing-page {
-    height: 100%;
+    padding-bottom: 300px;
 }
 
 .landing-page:after {
@@ -154,6 +155,38 @@ a:-webkit-any-link {
     width: 40%;
     text-align: center;
     margin: 0 auto;
+}
+
+/* ------------------------------------- */
+/* ABOUT PAGE */
+/* ------------------------------------- */
+
+.about-page {
+    width: 100%;
+}
+
+.about-page p {
+    padding: 20px;
+    font-size: 14px;
+}
+
+.about-container {
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+}
+
+/* ------------------------------------- */
+/* ANIMATION */
+/* ------------------------------------- */
+
+.main-nav.down {
+    height: 50px;
+    transition: height 0.3s;
+}
+
+.main-nav a.text-down {
+    padding: 17px 5px;
+    transition: padding 0.3s;
 }
 
 /* ------------------------------------- */
@@ -191,26 +224,39 @@ a:-webkit-any-link {
         background-attachment: fixed;
         background-color: #252525;
     }
+
+    header {
+        padding-top: 0px;
+    }
+    
+    header h1 {
+        text-shadow: 1px 1px 25px rgba(0, 0, 0, 0.54);
+        font-size: 54px;
+        color: #E3E3E3;
+        text-align: center;
+    }
     
     .main-nav {
+        display: block;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         height: 80px;
         overflow: hidden;
         box-shadow:0 0 10px #101010;
+        transition: height 0.3s;
     }
 
     .main-nav a {
         display: block;
-        padding: 15px 5px;
+        padding: 30px 5px;
         font-size: 14px;
         text-decoration: none;
         height: 100%;
         -webkit-transition: color 0.3s;
-        transition: color 0.2s ease;
+        transition: color 0.2s ease, padding 0.3s;
     }
 
     .main-nav a:hover {
-        color: #868686;
+        color: #24acb6;
         -webkit-transition: color 0.3s;
         transition: color 0.3s ease;
     }
@@ -255,9 +301,24 @@ a:-webkit-any-link {
     /* ------------------------------------- */
     /* LANDING PAGE */
     /* ------------------------------------- */
+    .landing-page {
+        padding-bottom: 700px;
+    }
+
+    .landing-page h1 {
+        padding-top: 250px;
+    }
 
     .landing-page p {
         line-height: 1.4;
+    }
+
+    /* ------------------------------------- */
+    /* CONTACT PAGE */
+    /* ------------------------------------- */
+    .contact-page {
+        height: 200px;
+        background-color: black;
     }
 
 }
