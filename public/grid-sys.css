@@ -18,14 +18,14 @@
     clear: both;
   }
   
-  .col-3, .col-4, .col-6, .col-12 {
+  .col-3, .col-4, .col-6, .col-12, .col-4-s {
     float: left;
     padding-left: 1.04166666%;
     padding-right: 1.04166666%;
   }
   
   /* Mobile defaults */
-  .col-3, .col-4, .col-6, .col-12 {
+  .col-3, .col-4, .col-6, .col-12, .col-4-s {
     width: 100%;
   }
   
@@ -51,4 +51,14 @@
     .col-12 {
       width: 100%;
     }
+
+    .col-4-s {
+      width: 33.333333%;
+    }
   }
+
+    @media only screen and (max-width: 1024px) {
+      .col-4-s {
+        width: 100%;
+      }
+    }

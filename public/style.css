@@ -357,6 +357,34 @@ a:-webkit-any-link {
     background-color: rgba(13, 22, 32, 1);
 }
 
+.project-item {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.466);
+    filter: grayscale(50%);  
+}
+
+.project-item.item-1 {
+    background-image: url("https://i.imgur.com/hwGvubg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-item.item-2 {
+    background-image: url("https://i.imgur.com/KaRAsHf.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project-item.item-3 {
+    background-image: url("https://i.imgur.com/nFBT66V.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* ------------------------------------- */
 /* CONTACT PAGE */
 /* ------------------------------------- */
@@ -423,12 +451,12 @@ a:-webkit-any-link {
 }
 
 
-/*ipad potrait*/
+/*iPad potrait*/
 @media only screen and (min-width: 768px) {
 
 }
 
-/*ipad lanscape / small laptop*/
+/*iPad lanscape / small laptop*/
 @media only screen and (min-width: 1024px) {
     html {
         position: relative;
