@@ -236,13 +236,14 @@ a:-webkit-any-link {
     opacity: 0;
     font-size: 14px;
     padding-bottom: 10px;
+    color: rgb(219, 219, 219);
 }
 
 .about-page h2 {
     opacity: 0;
     font-size: 22px;
     padding-bottom: 2px;
-    color: white;
+    color: rgb(219, 219, 219)
 }
 
 .about-page a {
@@ -260,8 +261,9 @@ a:-webkit-any-link {
 }
 
 .about-container {
+    overflow: hidden;
     width: 100%;
-    height: 600px;
+    height: 100%;
     padding: 40px;
     background-color: rgba(13, 22, 32, 1);
 }
@@ -290,15 +292,19 @@ a:-webkit-any-link {
 
 .tech-page .sub-line {
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     height: 1px;
     width: 158px;
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
 }
 
+.tech-page hr {
+    display: none;
+}
+
 .tech-container {
     width: 100%;
-    height: 600px;
+    height: 100%;
     padding: 40px;
     background-color: rgb(219, 219, 219);
 }
@@ -331,17 +337,22 @@ a:-webkit-any-link {
 .projects-page p {
     font-size: 14px;
     padding-bottom: 10px;
+    color: rgb(219, 219, 219);
 }
 
 .projects-page h2 {
     font-size: 22px;
     padding-bottom: 2px;
-    color: white;
+    color: rgb(219, 219, 219);
+}
+
+.projects-page .sub-line {
+    width: 85px;
 }
 
 .projects-container {
     width: 100%;
-    height: 600px;
+    height: 100%;
     padding: 40px;
     background-color: rgba(13, 22, 32, 1);
 }
@@ -358,13 +369,19 @@ a:-webkit-any-link {
 
 .contact-page p {
     font-size: 14px;
-    padding-bottom: 10px;
+    padding-bottom: 35px;
+    color: rgb(26, 33, 49);
 }
 
 .contact-page h2 {
     font-size: 22px;
     padding-bottom: 2px;
-    color: white;
+    color: rgb(26, 33, 49);
+}
+
+.contact-page .sub-line {
+    width: 118px;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
 }
 
 .contact-container {
@@ -452,6 +469,7 @@ a:-webkit-any-link {
     }
     
     .main-nav {
+        z-index: 99;
         display: block;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
         height: 80px;
@@ -589,13 +607,24 @@ a:-webkit-any-link {
     .tech-item {
         padding: 20px;
         position: relative;
-        transition: padding 0.3s;
+        transition: padding 0.3s, color 0.3s;
     }
 
     .tech-item:hover {
-        color: white;
         padding: 10px;
         transition: padding 0.4s;
+    }
+
+    .tech-item:hover > i {
+        color: #24acb6;
+        transition: color 0.2s;
+    }
+
+    /* ------------------------------------- */
+    /* PROJECTS PAGE */
+    /* ------------------------------------- */
+    .projects-page {
+
     }
 
 
