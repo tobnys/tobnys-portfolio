@@ -86,7 +86,7 @@ footer p a {
 
 footer p a:hover {
     transition: color 0.3s ease;
-    color: rgb(255, 255, 255);
+    color: #24acb6;
 }
 
 a:-webkit-any-link {
@@ -135,7 +135,7 @@ a:-webkit-any-link {
 
 .icon i:hover {
     transition: color 0.3s ease;
-    color: rgb(255, 255, 255);
+    color: #1d868d;
 }
 
 /* ------------------------------------- */
@@ -275,7 +275,7 @@ a:-webkit-any-link {
 
 .tech-page p {
     font-size: 14px;
-    padding-bottom: 10px;
+    padding-bottom: 35px;
     color: rgb(26, 33, 49);
 }
 
@@ -298,6 +298,21 @@ a:-webkit-any-link {
     height: 600px;
     padding: 40px;
     background-color: rgb(219, 219, 219);
+}
+
+.tech-item {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.tech-items i {
+    color: rgba(13, 22, 32, 1);
+    font-size: 85px;
+}
+
+.tech-items p {
+    text-align: center;
+    font-weight: bold;
 }
 
 /* ------------------------------------- */
@@ -558,6 +573,26 @@ a:-webkit-any-link {
         font-size: 16px;
         line-height: 1.4em;
     }
+
+    .tech-items hr {
+        display: block;
+        width: 25%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .tech-item {
+        padding: 20px;
+        position: relative;
+        transition: padding 0.3s;
+    }
+
+    .tech-item:hover {
+        color: white;
+        padding: 10px;
+        transition: padding 0.4s;
+    }
+
 
     /* ------------------------------------- */
     /* CONTACT PAGE */
