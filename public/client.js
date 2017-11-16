@@ -2,7 +2,7 @@ $(function (){
     var mainRoot = $('html, body');
 
     // Smooth scrolling navigation
-    $("#page-home, #page-about, #page-skills, #page-projects, #page-contact").click(function(e){
+    $("#page-home, #page-about, #page-skills, #page-projects, #page-contact, #page-explore").click(function(e){
         if(e.target.id === "page-home"){
             mainRoot.animate({
                 scrollTop: 0
@@ -36,6 +36,13 @@ $(function (){
                 scrollTop: 2862
             }, 800, function(e){
                 window.location.hash = "contact";
+            });
+        }
+        if(e.target.id === "page-explore"){
+            mainRoot.animate({
+                scrollTop: 920
+            }, 800, function(e){
+                window.location.hash = "about";
             });
         }
     })
