@@ -48,24 +48,11 @@ $(function (){
         }
     })
 
-
-    setInterval(animateArrow, 400);
-
-    function animateArrow(){
-        $(".fa-arrow-down").animate({
-            bottom: "3px"
-        }, 200, function(){
-            $(".fa-arrow-down").animate({
-                bottom: "-2px"
-            }, 200);
-        });
-    }
 });
 
 
 // Target scrolling
 $(document).scroll(function(){
-    console.log($(this).scrollTop());
     // Shrink navbar on scrolldown.
     if($(this).scrollTop() > 30){
         $(".main-nav").addClass("down");

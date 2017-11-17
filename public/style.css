@@ -183,6 +183,8 @@ a:-webkit-any-link {
 .fa-arrow-down {
     position: relative;
     left: 20px;
+    animation: jump 0.5s ease infinite;
+    animation-fill-mode: forwards;
 }
 
 #main-circle {
@@ -522,6 +524,18 @@ a:-webkit-any-link {
 /* ------------------------------------- */
 /* ANIMATION */
 /* ------------------------------------- */
+
+@keyframes jump {
+    0% {
+        bottom: 3px;
+    }
+    50% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 3px;
+    }
+}
 
 .main-nav.down {
     height: 50px;
