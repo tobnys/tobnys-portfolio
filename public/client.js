@@ -41,12 +41,13 @@ $(function (){
         }
         if(e.target.id === "page-explore"){
             mainRoot.animate({
-                scrollTop: 920
+                scrollTop: 700
             }, 800, function(e){
                 window.location.hash = "about";
             });
         }
     })
+
 
     setInterval(animateArrow, 400);
 
@@ -64,6 +65,7 @@ $(function (){
 
 // Target scrolling
 $(document).scroll(function(){
+    console.log($(this).scrollTop());
     // Shrink navbar on scrolldown.
     if($(this).scrollTop() > 30){
         $(".main-nav").addClass("down");
@@ -76,33 +78,33 @@ $(document).scroll(function(){
     }
 
     // Show elements on scrolldown.
-    if($(this).scrollTop() > 150){
+    if($(this).scrollTop() >= 150){
         $(".about-page p, .about-page h2, .about-page .sub-line").animate({
              opacity: 1,
         }, 1000);
     }
-    if($(this).scrollTop() > 500){
+    if($(this).scrollTop() >= 500){
         $(".tech-page p, .tech-page h2, .tech-page .sub-line").animate({
             opacity: 1,
        }, 1000);
     }
 
     // ICONS FIRST ROW
-    if($(this).scrollTop() > 700){
+    if($(this).scrollTop() >= 700){
         $(".icon-row-1 .tech-item").animate({
             opacity: 1,
             "bottom": "0",
        }, 500);
     }
     // ICONS SECOND ROW
-    if($(this).scrollTop() > 900){
+    if($(this).scrollTop() >= 900){
         $(".icon-row-2 .tech-item").animate({
             opacity: 1,
             "bottom": "0px"
        }, 500);
     }
     // ICONS THIRD ROW
-    if($(this).scrollTop() > 1100){
+    if($(this).scrollTop() >= 1100){
         $(".icon-row-3 .tech-item").animate({
             opacity: 1,
             "bottom": "0px"
@@ -117,19 +119,19 @@ $(document).scroll(function(){
     }
 
     // PROJECTS PAGE
-    if($(this).scrollTop() > 1650){
+    if($(this).scrollTop() >= 1650){
         $(".project-item.item-1, .project-item.item-2, .projects-page .sub-line").animate({
             opacity: 1,
        }, 700);
     }
-    if($(this).scrollTop() > 2050){
+    if($(this).scrollTop() >= 2050){
         $(".project-item.item-3, .project-item.item-4").animate({
             opacity: 1,
        }, 700);
     }
 
     // CONTACTS PAGE
-    if($(this).scrollTop() > 2050){
+    if($(this).scrollTop() >= 2050){
         $(".contact-inline-container h3, .contact-page h2, .contact-page .sub-line").animate({
             opacity: 1,
        }, 1000);
