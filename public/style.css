@@ -22,7 +22,7 @@ html {
     height: 100%;
     background-color: #084857;
     font-family: 'Open Sans', sans-serif;
-    background: url("https://static.pexels.com/photos/37724/pexels-photo-37724.jpeg");
+    background: url("https://i.imgur.com/1TFBa3P.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -583,7 +583,7 @@ a:-webkit-any-link {
         rgba(0,0,0,0) 50%,
         rgba(0, 0, 0, 0) 50%,
         rgba(0,0,0,0.2) 100%),
-         url("https://static.pexels.com/photos/37724/pexels-photo-37724.jpeg");
+         url("https://i.imgur.com/Y74AAPl.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -605,7 +605,7 @@ a:-webkit-any-link {
     }
     
     header h1 {
-        text-shadow: 1px 1px 25px rgba(0, 0, 0, 0.54);
+        text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.54);
         font-size: 54px;
         color: #E3E3E3;
         text-align: center;
