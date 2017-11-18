@@ -2,42 +2,28 @@ $(function (){
     // Cache a target so that we do not load it every time our functions run.
     var mainRoot = $('html, body');
 
+    $.fn.scrollTo = function() {
+        mainRoot.animate({
+            scrollTop: $(this).offset().top - "50"
+        }, 800);
+    }
+
     // Smooth scrolling navigation
     $("#page-home, #page-about, #page-skills, #page-projects, #page-contact, #page-explore").click(function(e){
         if(e.target.id === "page-home"){
-            mainRoot.animate({
-                scrollTop: 0
-            }, 800, function(e){
-                window.location.hash = "home";
-            });
+            $('.landing-page').scrollTo();
         }   
         if(e.target.id === "page-about"){
-            mainRoot.animate({
-                scrollTop: 920
-            }, 800, function(e){
-                window.location.hash = "about";
-            });
+            $('.about-page').scrollTo();
         }
         if(e.target.id === "page-skills"){
-            mainRoot.animate({
-                scrollTop: 1200
-            }, 800, function(e){
-                window.location.hash = "skills";
-            });
+            $('.tech-page').scrollTo();
         }
         if(e.target.id === "page-projects"){
-            mainRoot.animate({
-                scrollTop: 2400
-            }, 800, function(e){
-                window.location.hash = "projects";
-            });
+            $('.projects-page').scrollTo();
         }
         if(e.target.id === "page-contact"){
-            mainRoot.animate({
-                scrollTop: 2800
-            }, 800, function(e){
-                window.location.hash = "contact";
-            });
+            $('.contact-page').scrollTo();
         }
         if(e.target.id === "page-explore"){
             mainRoot.animate({
