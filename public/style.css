@@ -97,7 +97,7 @@ a:-webkit-any-link {
     display: none;
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(13, 22, 32, 1);
     border-bottom: 1px solid rgba(0,0,0, 0.15);
     height: 50px;
     margin-bottom: 50px;
@@ -271,6 +271,20 @@ a:-webkit-any-link {
     background-color: rgba(13, 22, 32, 1);
 }
 
+.img-container {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.img-container img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 2px solid white;
+    filter: grayscale(20%) brightness(110%);
+}
+
 /* ------------------------------------- */
 /* TECH PAGE */
 /* ------------------------------------- */
@@ -300,7 +314,7 @@ a:-webkit-any-link {
     margin-top: 5px;
     margin-bottom: 10px;
     height: 1px;
-    width: 158px;
+    width: 52px;
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0));
 }
 
@@ -357,7 +371,7 @@ a:-webkit-any-link {
 
 .projects-page .sub-line {
     margin-bottom: 10px;
-    width: 85px;
+    width: 160px;
 }
 
 .projects-container {
@@ -689,7 +703,7 @@ a:-webkit-any-link {
     }
 
     .landing-page p {
-        line-height: 1.4;
+        line-height: 1.2em;
     }
 
     /* ------------------------------------- */
@@ -719,7 +733,7 @@ a:-webkit-any-link {
 
     .about-container p {
         font-size: 16px;
-        line-height: 1.4em;
+        line-height: 1.2em;
     }
 
     /* ------------------------------------- */
@@ -739,7 +753,7 @@ a:-webkit-any-link {
 
     .tech-container p {
         font-size: 16px;
-        line-height: 1.4em;
+        line-height: 1.2em;
     }
 
     .tech-items hr {
