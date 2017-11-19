@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="/grid-sys.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   </head>
@@ -31,7 +31,10 @@
         <header>
             <div class="row">
                 <div class="col-12">
-                    <h1>Tobias Nyström<br>Software Engineer</h1>
+                    <div class="main-header">
+                        <h1>Tobias Nyström</h1>
+                        <h1 id="sub-header">Software Engineer</h1>
+                    </div>
                     <button class="header-btn" id="page-explore">Explore <i class="fa fa-arrow-down" aria-hidden="true"></i></button>
                 </div>
             </div>
@@ -156,34 +159,46 @@
             <h2>Recent projects</h2>
             <div class="sub-line"></div>
             <div class="row">
-                <div class="col-6">
-                    <div class="project-item item-1">
-                        <img src="https://i.imgur.com/nFBT66V.png" alt="Web Developer Toolkit" id="item-img-1">
-                        <a href="https://github.com/tobnys/webdev-toolkit-final-capstone" target="_blank" class="item-btn item-btn-1" id="item-btn-1">Details</a>
-                        <a href="https://webdev-toolkit.netlify.com/" target="_blank" class="item-btn item-btn-1" id="item-btn-1">Demo</a>
+                <div class="project-sub-container-1">
+                    <div class="col-12">
+                        <div class="project-item item-1">
+                            <img src="https://i.imgur.com/nFBT66V.png" alt="Web Developer Toolkit" id="item-img-1">
+                        </div>
+                        <div class="project-sidebar">
+                            <h3>Webdev Toolkit</h3>
+                            <p class="desc">An application that is a collection of frequently used web developer tools such as lorem ipsum generator and popular webfonts.</p>
+                            <p class="tech">HTML5, CSS3, JavaScript, jQuery, NodeJS, Mongoose / MongoDB, Heroku (hosting), Axios, Mocha & Chai, TravisCI, GitHub.</p>
+                            <a href="https://github.com/tobnys/webdev-toolkit-final-capstone" target="_blank" class="item-btn item-btn-1" id="item-btn-1">Details</a>
+                            <a href="https://webdev-toolkit.netlify.com/" target="_blank" class="item-btn item-btn-1" id="item-btn-1">Demo</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div class="project-item item-2">
-                        <img src="https://i.imgur.com/KaRAsHf.png" alt="Imperium Game" id="item-img-2">
-                        <a href="https://github.com/tobnys/Imperium" target="_blank" class="item-btn item-btn-2" id="item-btn-2">Details</a>
-                        <a href="https://imperium-game.herokuapp.com/" target="_blank" class="item-btn item-btn-2" id="item-btn-2">Demo</a>
-                    </div>
+                    <div class="col-12">
+                        <div class="project-item item-2">
+                            <img src="https://i.imgur.com/KaRAsHf.png" alt="Imperium Game" id="item-img-2">
+                        </div>
+                        <div class="project-sidebar">
+                            <h3>Imperium</h3>
+                            <p class="desc">A text-based Idle/RPG game of which a player can create their own empire and build their economy.</p>
+                            <p class="tech">HTML5, CSS3, JavaScript, jQuery, NodeJS, Mongoose / MongoDB, Heroku (hosting), Mocha & Chai, TravisCI, GitHub.</p>
+                            <a href="https://github.com/tobnys/Imperium" target="_blank" class="item-btn item-btn-2" id="item-btn-2">Details</a>
+                            <a href="https://imperium-game.herokuapp.com/" target="_blank" class="item-btn item-btn-2" id="item-btn-2">Demo</a>
+                        </div>
+                    </div>     
                 </div>
             </div>
             <div class="row">
-                <div class="col-6">
-                    <div class="project-item item-3">
-                        <img src="https://i.imgur.com/hwGvubg.png" alt="API Hack Project" id="item-img-3">
-                        <a href="https://github.com/tobnys/API-Capstone" target="_blank" class="item-btn item-btn-3" id="item-btn-3">Details</a>
-                        <a href="http://tobnys-api-capstone.herokuapp.com/" target="_blank" class="item-btn item-btn-3" id="item-btn-3">Demo</a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="project-item item-4">
-                        <img src="https://i.imgur.com/BjBpOuA.jpg" alt="Question mark" id="item-img-4">
-                        <a class="item-btn item-btn-4" id="item-btn-4">Details</a>
-                        <a class="item-btn item-btn-4" id="item-btn-4">Demo</a>
+                <div class="project-sub-container-2">
+                    <div class="col-12">
+                        <div class="project-item item-3">
+                            <img src="https://i.imgur.com/hwGvubg.png" alt="API Hack Project" id="item-img-3">
+                        </div>
+                        <div class="project-sidebar">
+                            <h3>API Hack</h3>
+                            <p class="desc">A simplistic web application which uses the OpenWeatherMap API to retrieve weather info based on the query provided.</p>
+                            <p class="tech">HTML5, CSS3, JavaScript, jQuery, Ajax, GitHub.</p>
+                            <a href="https://github.com/tobnys/API-Capstone" target="_blank" class="item-btn item-btn-3" id="item-btn-3">Details</a>
+                            <a href="http://tobnys-api-capstone.herokuapp.com/" target="_blank" class="item-btn item-btn-3" id="item-btn-3">Demo</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -211,11 +226,6 @@
                     <a href="https://github.com/tobnys/" target="_blank" class="icon"><i class="fa fa-github" aria-hidden="true"></i></a>
                     <a href="https://www.linkedin.com/in/tobnys/" target="_blank" class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
               </div>
-          </div>
-      </div>
-      <div class="row">
-          <div class="col-12">
-              <p>&copy; <a href="mailto:tobnystrom@gmail.com">Tobias Nyström</a></p>
           </div>
       </div>
     </footer>

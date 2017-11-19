@@ -26,19 +26,44 @@ $(function (){
             $('.contact-page').scrollTo();
         }
         if(e.target.id === "page-explore"){
-            mainRoot.animate({
-                scrollTop: 700
-            }, 800, function(e){
-                window.location.hash = "about";
-            });
+            $('.about-page').scrollTo();
         }
     })
 
 });
 
+function setActive(item){
+    $(".main-nav a").removeClass("active");
+    $(item).addClass("active");
+}
+setActive("#page-home");
 
 // Target scrolling
-$(document).scroll(function(){
+$(window).scroll(function(){
+
+    // Set active nav item
+    if($(this).scrollTop() < $(".about-page").offset().top){
+        setActive("#page-home");
+    }
+
+    if($(this).scrollTop() >= $(".about-page").offset().top-100){
+        setActive("#page-about");
+    }
+
+    if($(this).scrollTop() >= $(".tech-page").offset().top-100){
+        setActive("#page-skills");
+    }
+
+    if($(this).scrollTop() >= $(".projects-page").offset().top-100){
+        setActive("#page-projects");
+    }
+
+	var scrollHeight = $(document).height();
+	var scrollPosition = $(window).height() + $(window).scrollTop();
+	if ((scrollHeight - scrollPosition) / scrollHeight === 0) {
+	    setActive("#page-contact");
+	}
+
     // Shrink navbar on scrolldown.
     if($(this).scrollTop() > 30){
         $(".main-nav").addClass("down");
@@ -51,8 +76,8 @@ $(document).scroll(function(){
     }
 
     // Show elements on scrolldown.
-    if($(this).scrollTop() >= 150){
-        $(".about-page p, .about-page h2, .about-page .sub-line").animate({
+    if($(this).scrollTop() > 150){
+        $(".about-page p, .about-page h2, .about-page .sub-line, .img-container").animate({
              opacity: 1,
         }, 1000);
     }
@@ -93,12 +118,12 @@ $(document).scroll(function(){
 
     // PROJECTS PAGE
     if($(this).scrollTop() >= 1650){
-        $(".project-item.item-1, .project-item.item-2, .projects-page .sub-line").animate({
+        $(".project-sub-container-1, .projects-page .sub-line").animate({
             opacity: 1,
        }, 700);
     }
     if($(this).scrollTop() >= 2050){
-        $(".project-item.item-3, .project-item.item-4").animate({
+        $(".project-sub-container-2").animate({
             opacity: 1,
        }, 700);
     }
