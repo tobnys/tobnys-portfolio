@@ -1,5 +1,13 @@
 # Personal Portfolio
 
-Link to live application: https://tobnys.io/
+Link to live application: http://tobnys.io/
 
-# Goal & Use Case
+# Technology Used
+**Front-end**
+ * HTML5
+ * CSS3
+ * JavaScript
+ * jQuery 
+ * Devicon 2.0
+ * FontAwesome
+
