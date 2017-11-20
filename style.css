@@ -644,7 +644,12 @@ a:-webkit-any-link {
 
 /*iPad potrait*/
 @media only screen and (min-width: 768px) {
-
+    .project-item {
+        width: 50%;
+    }
+    .project-sidebar {
+        width: 50%;
+    }
 }
 
 /*iPad lanscape / small laptop*/
