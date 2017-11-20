@@ -424,7 +424,7 @@ a:-webkit-any-link {
     z-index: 90;
     font-family: 'Open Sans', sans-serif;
     display: inline-block;
-    width: 35%;
+    width: 38%;
     height: 45px;
     border: 2px solid white;
     margin-top: 40px;
@@ -860,12 +860,6 @@ a:-webkit-any-link {
     .project-sidebar {
         width: 50%;
     }
-    
-
-    #item-btn-1, #item-btn-2, #item-btn-3, #item-btn-4 {
-        opacity: 1;
-        transition: opacity 0.4s;
-    }
 
     #item-img-1, #item-img-2, #item-img-3 {
         filter: grayscale(25%) brightness(100%);
@@ -876,11 +870,6 @@ a:-webkit-any-link {
         transition: filter 0.3s;
     }
 
-    .item-1:hover > #item-btn-1 {
-        opacity: 1;
-        transition: opacity 0.3s, background-color 0.3s, border 0.3s ease, color 0.3s ease;
-    }
-
     .item-1:hover > #item-img-1 {
         -moz-transform: scale(1.1);
         -webkit-transform: scale(1.1);
@@ -889,11 +878,6 @@ a:-webkit-any-link {
         transition: filter 0.3s, transform 0.3s;
     } 
 
-    .item-2:hover > #item-btn-2 {
-        opacity: 1;
-        transition: opacity 0.3s, background-color 0.3s, border 0.3s ease, color 0.3s ease;
-    }
-
     .item-2:hover > #item-img-2 {
         -moz-transform: scale(1.1);
         -webkit-transform: scale(1.1);
@@ -901,11 +885,6 @@ a:-webkit-any-link {
         filter: grayscale(12%);
         transition: filter 0.3s, transform 0.3s;
     } 
-
-    .item-3:hover > #item-btn-3 {
-        opacity: 1;
-        transition: opacity 0.3s, background-color 0.3s, border 0.3s ease, color 0.3s ease;
-    }
 
     .item-3:hover > #item-img-3 {
         -moz-transform: scale(1.1);
