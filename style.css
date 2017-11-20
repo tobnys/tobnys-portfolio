@@ -170,6 +170,7 @@ a:-webkit-any-link {
 }
 
 .header-btn {
+    z-index: 99;
     font-family: 'Open Sans', sans-serif;
     margin-left: auto;
     margin-right: auto;
@@ -196,6 +197,7 @@ a:-webkit-any-link {
 }
 
 .fa-arrow-down {
+    z-index: 90;
     position: relative;
     left: 20px;
     animation: jump 0.5s ease infinite;
@@ -413,12 +415,13 @@ a:-webkit-any-link {
     margin-top: 20px;
     border: 1px solid rgba(255, 255, 255, 0.466);
     text-align: center;
+    overflow: hidden;
 }
 
 .project-item img {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    transform: scale(1.1);  
 }
 
 .project-sidebar a {
@@ -633,12 +636,18 @@ a:-webkit-any-link {
 
 /*iPhone portrait*/
 @media only screen and (min-width: 320px) {
+
 }
 
 
 /*iPhone landscape*/
 @media only screen and (min-width: 480px) {
-
+    .project-item {
+        width: 75%;
+    }
+    .project-sidebar {
+        width: 75%;
+    }
 }
 
 
@@ -859,11 +868,13 @@ a:-webkit-any-link {
         height: 300px;
         margin-top: 20px;
         border: 1px solid rgba(255, 255, 255, 0.466);
-        filter: grayscale(50%);  
+        filter: grayscale(50%);
     }
 
     .project-item img {
-        background-size: cover; 
+        max-width: 100%;
+        height: auto;
+        transform: scale(1.1);  
     }
 
     .project-sidebar {
