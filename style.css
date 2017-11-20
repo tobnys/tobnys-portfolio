@@ -134,6 +134,10 @@ a:-webkit-any-link {
     padding-top: 40px;
 }
 
+.icon-group a {
+    padding: 10px;
+}
+
 .icon {
     padding: 5px;
 }
