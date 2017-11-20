@@ -182,17 +182,17 @@ a:-webkit-any-link {
     font-size: 15px;
     font-weight: bold;
     border-radius: 3px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
     transition: background-color 0.3s ease, border 0.3s ease, color 0.5s ease;
     margin-bottom: 50px;
 }
 
 .header-btn:hover {
     cursor: pointer;
-    color: #ffffff;
+    color: rgb(0, 0, 0);
     border: 2px solid rgb(255, 255, 255);
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgb(255, 255, 255);
     transition: background-color 0.3s ease, border 0.3s ease, color 0.5s ease;
 }
 
