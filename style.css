@@ -637,7 +637,7 @@ a:-webkit-any-link {
         rgba(0, 0, 0, 0) 50%,
         rgba(0,0,0,0.2) 100%),
          url("https://i.imgur.com/aTh43oC.jpg");
-        background-size: cover;
+        background-size: 1920px 1080px;
         background-repeat: no-repeat;
         background-position: center center;
         background-attachment: fixed;
@@ -826,8 +826,11 @@ a:-webkit-any-link {
 
     .project-item img {
         max-width: 100%;
+        width: auto;
         height: auto;
-        transform: scale(1.6);  
+        
+
+        transform: scale(1);
     }
 
     .project-sidebar {
