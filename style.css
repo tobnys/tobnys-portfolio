@@ -828,9 +828,6 @@ a:-webkit-any-link {
         max-width: 100%;
         width: auto;
         height: auto;
-        
-
-        transform: scale(1);
     }
 
     .project-sidebar {
